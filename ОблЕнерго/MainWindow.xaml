@@ -1,0 +1,46 @@
+﻿<Window x:Class="ОблЕнерго.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ОблЕнерго"
+        mc:Ignorable="d"
+        Title="проект &quot;2 СТУЛА&quot;" Height="600" Width="1016.5" Icon="Img/water-multi-size.ico" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="Img/real-carbon-fiber-desktop-background-wallpaper.jpg"/>
+    </Window.Background>
+    <Grid Margin="0,0,18,17">
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="20" Margin="65,12,0,0" TextWrapping="Wrap" Text="tov008008" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="20" Margin="65,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Text="tov008008"/>
+        <Button x:Name="buttonLogin" Content="1. Войти" HorizontalAlignment="Left" Height="20" Margin="165,24,0,0" VerticalAlignment="Top" Width="66" Click="buttonLogin_Click"/>
+        <TextBox x:Name="test" HorizontalAlignment="Left" Height="447" Margin="10,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="447" Margin="165,95,0,0" VerticalAlignment="Top" Width="815">
+            <DataGrid.Columns>
+
+
+
+
+
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="run" Content="Запустить" HorizontalAlignment="Left" Height="20" Margin="516,48,0,0" VerticalAlignment="Top" Width="93" Click="run_Click"/>
+        <Button x:Name="stop" Content="Остановить" HorizontalAlignment="Left" Height="20" Margin="626,48,0,0" VerticalAlignment="Top" Width="92" Click="stop_Click"/>
+        <TextBox x:Name="percent" HorizontalAlignment="Left" Height="20" Margin="318,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Text="3" TextAlignment="Center" PreviewTextInput="checkint"/>
+        <Label x:Name="label_Copy" Content="Логин:" HorizontalAlignment="Left" Height="26" Margin="15,6,0,0" VerticalAlignment="Top" Width="45" Foreground="White"/>
+        <Label x:Name="label_Copy1" Content="Пароль:" HorizontalAlignment="Left" Height="26" Margin="5,33,0,0" VerticalAlignment="Top" Width="55" Foreground="White"/>
+        <Label x:Name="label_Copy2" Content="Процент:" HorizontalAlignment="Left" Height="26" Margin="242,7,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.5,0.577" Foreground="#FFFBFAFA"/>
+        <TextBox x:Name="time__left" HorizontalAlignment="Left" Height="20" Margin="601,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" TextAlignment="Center" Text="30" PreviewTextInput="checkint"/>
+        <Label x:Name="label_Copy3" Content="Начать за:" HorizontalAlignment="Left" Height="26" Margin="531,10,0,0" VerticalAlignment="Top" Width="65" Foreground="#FFFFFDFD"/>
+        <Label x:Name="label_Copy4" Content="минут" HorizontalAlignment="Left" Height="26" Margin="673,10,0,0" VerticalAlignment="Top" Width="45" Foreground="#FFFFFCFC"/>
+        <TextBox x:Name="number_add" HorizontalAlignment="Left" Height="20" Margin="318,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" TextAlignment="Center" PreviewTextInput="checkint"/>
+        <Label x:Name="label_Copy5" Content="№ тендера" HorizontalAlignment="Left" Height="26" Margin="242,33,0,0" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.5,0.577" Foreground="#FFFBFAFA"/>
+        <Button x:Name="addTend" Content="2. Добавить Тендер" HorizontalAlignment="Left" Height="20" Margin="372,24,0,0" VerticalAlignment="Top" Width="130" Click="addTend_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="74" Margin="718,16,0,0" VerticalAlignment="Top" Width="252" Source="Img/logos.png"/>
+        <Label x:Name="label" Content="Окно событий" HorizontalAlignment="Left" Margin="39,69,0,0" VerticalAlignment="Top" Width="94" Foreground="#FFFFFCFC"/>
+        <Label x:Name="label1" Content="Окно добавленных тендеров" HorizontalAlignment="Left" Margin="462,73,0,0" VerticalAlignment="Top" Foreground="#FFF3EFEF"/>
+
+    </Grid>
+</Window>
+
